@@ -46,8 +46,9 @@ zinit load zdharma/history-search-multi-word
 zinit light zsh-users/zsh-history-substring-search
 
 # theme
-# powerline用
-zplugin ice depth=1; zplugin light romkatv/powerlevel10k
+# pure用
+zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
+zinit light sindresorhus/pure
 
 # highlighting
 # シンタックスハイライト
