@@ -7,7 +7,7 @@ DOTPATH=${HOME}/dotfiles
 #ln -snvf ${DOTPATH}/.zshrc ${HOME}/.zshrc
 
 # 配置したい設定ファイル
-dotfiles=(.zshrc .vimrc .tmux.conf .p10k.zsh)
+dotfiles=(.zshrc .vimrc .tmux.conf)
 
 # 設定ファイルのシンボリックリンクを
 # ホームディレクトリ直下に作成する

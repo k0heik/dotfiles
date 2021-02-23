@@ -49,8 +49,12 @@ zinit light zsh-users/zsh-history-substring-search
 # pure用
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
+zstyle :prompt:pure:prompt:success color "#5FFF00"
+zstyle :prompt:pure:prompt:error color "#FF5F00"
+zstyle :prompt:pure:path color "#00D7FF"
+zstyle :prompt:pure:git:branch color "#FFFF87"
 
-# highlighting
+#  highlighting
 # シンタックスハイライト
 zinit light zsh-users/zsh-syntax-highlighting
 
@@ -89,9 +93,3 @@ setopt hist_ignore_dups
 autoload -Uz compinit
 compinit
 #######
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
-[[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
