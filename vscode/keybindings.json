@@ -1,0 +1,245 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "m f",
+		"command": "explorer.newFolder",
+		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "m a",
+		"command": "explorer.newFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+alt+m",
+		"command": "editor.action.toggleMinimap"
+	},
+	{
+		"key": "ctrl+[BracketLeft]",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "ctrl+shift+[BracketLeft]",
+		"command": "-workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "cursorDown",
+		"when": "editorTextFocus && !inRegionMode && !suggestWidgetVisible && vim.mode == 'Insert'"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "cursorLeft",
+		"when": "editorTextFocus && !inRegionMode && vim.mode == 'Insert'"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "cursorUp",
+		"when": "editorTextFocus && vim.active && vim.mode == 'Replace'"
+},
+	{
+		"key": "ctrl+f",
+		"command": "cursorRight",
+		"when": "editorTextFocus && vim.active && vim.mode == 'Replace'"
+	},
+	{
+		"key": "ctrl+a",
+		"command": "cursorHome",
+		"when": "editorTextFocus && !inRegionMode && vim.mode == 'Insert'"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "cursorEnd",
+		"when": "editorTextFocus && !inRegionMode && vim.mode == 'Insert'"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "deleteRight",
+		"when": "editorTextFocus && !editorHasSelection && vim.mode == 'Insert'"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "deleteLeft",
+		"when": "editorTextFocus && vim.mode == 'Insert'"
+	},
+	{
+		"key": "cmd+e",
+		"command": "workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "shift+cmd+e",
+		"command": "-workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "left",
+		"command": "notification.collapse",
+		"when": "notificationFocus"
+	},
+	{
+		"key": "left",
+		"command": "-notification.collapse",
+		"when": "notificationFocus"
+	},
+	{
+		"key": "j",
+		"command": "list.focusDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "down",
+		"command": "-list.focusDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "k",
+		"command": "list.focusUp",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "up",
+		"command": "-list.focusUp",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "o",
+		"command": "list.toggleExpand",
+		"when": "explorerViewletFocus && explorerViewletVisible && explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key": "enter",
+		"command": "list.toggleExpand",
+		"when": "explorerViewletFocus && explorerViewletVisible && explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key": "o",
+		"command": "list.toggleExpand",
+		"when": "!explorerViewletFocus && !explorerViewletVisible && listFocus && !inputFocus"
+	},
+	{
+		"key": "enter",
+		"command": "list.toggleExpand",
+		"when": "!explorerViewletFocus && !explorerViewletVisible && listFocus && !inputFocus"
+	},
+	{
+		"key": "g o",
+		"command": "list.toggleExpand",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "space",
+		"command": "-list.toggleExpand",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "/",
+		"command": "list.toggleKeyboardNavigation",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "cmd+g",
+		"command": "workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "cmd+g",
+		"command": "workbench.view.scm",
+		"when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.view.scm",
+		"when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+	},
+	{
+		"key": "s",
+		"command": "explorer.openToSide",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-explorer.openToSide",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "m r",
+		"command": "renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "enter",
+		"command": "-renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "m c",
+		"command": "filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "cmd+c",
+		"command": "-filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "m x",
+		"command": "filesExplorer.cut",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "cmd+x",
+		"command": "-filesExplorer.cut",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "m v",
+		"command": "filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "cmd+v",
+		"command": "-filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "m d",
+		"command": "deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "cmd+backspace",
+		"command": "-deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "m d",
+		"command": "deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "alt+cmd+backspace",
+		"command": "-deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "enter",
+		"command": "-list.select",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "o",
+		"command": "macros.selectAndToggleSidebar",
+		"when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key": "enter",
+		"command": "macros.selectAndToggleSidebar",
+		"when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+	},
+]

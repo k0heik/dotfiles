@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 ### Path ###
 # node.js path setting
 export PATH=$HOME/.nodebrew/node/v14.3.0/bin:$PATH
@@ -12,11 +5,10 @@ export PATH=$HOME/.nodebrew/node/v14.3.0/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 #######
 
-### Zinit ###
-# Zinitがなかったらインストール
-if [[ ! -d ~/.zinit ]];then
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-fi
+### nvim ###
+export XDG_BASE_HOME='~/.config'
+######
+
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
