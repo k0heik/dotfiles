@@ -13,6 +13,7 @@
         {"before": ["<ESC>", "<ESC>"], "commands": [":noh"]},
         {"before": ["<C-[>", "<C-[>"], "commands": [":noh"]}
     ],
+
     "vim.visualModeKeyBindingsNonRecursive": [
         {"before": ["<Tab>"],"commands" : ["editor.action.indentLines"]}, 
         {"before": ["<S-Tab>"],"commands" : ["editor.action.outdentLines"]}, 
@@ -32,27 +33,27 @@
     "vim.cursorStylePerMode.insert": "line-thin",
     "vim.cursorStylePerMode.replace": "block-outline",
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": ["#1882B6", "#FFFFFF"],
-    "vim.statusBarColors.insert": ["#984B1C", "#FFFFFF"],
-    "vim.statusBarColors.visual": ["#308C48", "#FFFFFF"],
-    "vim.statusBarColors.visualline": ["#308C48", "#FFFFFF"],
-    "vim.statusBarColors.visualblock": ["#308C48", "#FFFFFF"],
-    "vim.statusBarColors.replace": ["#E2A478", "#FFFFFF"],
-    "vim.statusBarColors.commandlineinprogress": ["#818596", "#FFFFFF"],
-    "vim.statusBarColors.searchinprogressmode": ["#818596", "#FFFFFF"],
-    "vim.statusBarColors.easymotionmode": ["#818596", "#FFFFFF"],
-    "vim.statusBarColors.easymotioninputmode": ["#818596", "#FFFFFF"],
-    "vim.statusBarColors.surroundinputmode": ["#818596", "#FFFFFF"],
+    "vim.statusBarColors.normal": ["#E9E900", "#000000"],
+    "vim.statusBarColors.insert": ["#00D1FF", "#000000"],
+    "vim.statusBarColors.visual": ["#00F954", "#000000"],
+    "vim.statusBarColors.visualline": ["#00F954", "#000000"],
+    "vim.statusBarColors.visualblock": ["#00F954", "#000000"],
+    "vim.statusBarColors.replace": ["#E2A478", "#000000"],
+    "vim.statusBarColors.commandlineinprogress": ["#E0E0E0", "#000000"],
+    "vim.statusBarColors.searchinprogressmode": ["#E0E0E0", "#000000"],
+    "vim.statusBarColors.easymotionmode": ["#E0E0E0", "#000000"],
+    "vim.statusBarColors.easymotioninputmode": ["#E0E0E0", "#000000"],
+    "vim.statusBarColors.surroundinputmode": ["#E0E0E0", "#000000"],
 
     "editor.snippetSuggestions": "top",
     "editor.tabCompletion": "on",
-    "workbench.colorTheme": "Monokai",
-    "files.autoGuessEncoding": true,
     "editor.minimap.renderCharacters": false,
     "editor.insertSpaces": false,
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "boundary",
     "explorer.compactFolders": false,
+    "workbench.colorTheme": "Monokai",
+    "files.autoGuessEncoding": true,
    "todo-tree.tree.showScanModeButton": false,
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -64,10 +65,10 @@
     "git.confirmSync": false,
 
     "workbench.colorCustomizations": {
-        "statusBar.background": "#1882B6",
-        "statusBar.noFolderBackground": "#1882B6",
-        "statusBar.debuggingBackground": "#1882B6",
-        "statusBar.foreground": "#FFFFFF"
+        "statusBar.background": "#E9E900",
+        "statusBar.noFolderBackground": "#E9E900",
+        "statusBar.debuggingBackground": "#E9E900",
+        "statusBar.foreground": "#000000"
     },
     "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 15,
@@ -79,8 +80,6 @@
     // Neo Vim
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "explorer.sortOrder": "modified",
-    "workbench.list.keyboardNavigation": "filter",
-    "workbench.list.automaticKeyboardNavigation": false,
     "explorer.confirmDelete": false,
     "workbench.editor.enablePreview": false,
     "macros": {
@@ -88,5 +87,7 @@
             "list.select",
             "workbench.action.toggleSidebarVisibility"
         ]
-    }
+    },
+    "workbench.list.automaticKeyboardNavigation": false,
+    "workbench.list.keyboardNavigation": "filter"
 }

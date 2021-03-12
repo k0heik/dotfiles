@@ -11,10 +11,6 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
 	{
-		"key": "ctrl+alt+m",
-		"command": "editor.action.toggleMinimap"
-	},
-	{
 		"key": "ctrl+[BracketLeft]",
 		"command": "workbench.action.terminal.toggleTerminal"
 	},
@@ -63,7 +59,7 @@
 		"when": "editorTextFocus && vim.mode == 'Insert'"
 	},
 	{
-		"key": "cmd+e",
+		"key": "ctrl+t",
 		"command": "workbench.view.explorer",
 		"when": "viewContainer.workbench.view.explorer.enabled"
 	},
@@ -136,26 +132,6 @@
 		"key": "/",
 		"command": "list.toggleKeyboardNavigation",
 		"when": "listFocus && !inputFocus"
-	},
-	{
-		"key": "cmd+g",
-		"command": "workbench.view.scm",
-		"when": "workbench.scm.active"
-	},
-	{
-		"key": "ctrl+shift+g",
-		"command": "-workbench.view.scm",
-		"when": "workbench.scm.active"
-	},
-	{
-		"key": "cmd+g",
-		"command": "workbench.view.scm",
-		"when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-	},
-	{
-		"key": "ctrl+shift+g",
-		"command": "-workbench.view.scm",
-		"when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
 	},
 	{
 		"key": "s",
@@ -234,12 +210,20 @@
 	},
 	{
 		"key": "o",
-		"command": "macros.selectAndToggleSidebar",
+		"command": "list.select",
 		"when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
 	},
 	{
 		"key": "enter",
-		"command": "macros.selectAndToggleSidebar",
+		"command": "list.select",
 		"when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key": "cmd+b",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "cmd+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
 	},
 ]

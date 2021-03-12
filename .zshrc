@@ -1,15 +1,25 @@
-### Path ###
+#----------------------------------------
+# Path
+#----------------------------------------
+alias nvim="vim"
+alias nvim="vi"
+
+#----------------------------------------
+# Path
+#----------------------------------------
 # node.js path setting
 export PATH=$HOME/.nodebrew/node/v14.3.0/bin:$PATH
 ### End of Zinit's installer chunk
 export PATH="/usr/local/sbin:$PATH"
-#######
 
-### nvim ###
+#----------------------------------------
+# nvim
+#----------------------------------------
 export XDG_BASE_HOME='~/.config'
-######
 
-
+#----------------------------------------
+# zinit install
+#----------------------------------------
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
@@ -23,6 +33,9 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit installer's chunk
 
+#----------------------------------------
+# zinit setting
+#----------------------------------------
 # autocomplete
 # 履歴から候補表示
 zinit light zsh-users/zsh-autosuggestions
@@ -53,9 +66,10 @@ zinit light zsh-users/zsh-syntax-highlighting
 # move
 # zで移動できる
 zinit light rupa/z
-#######
 
-### Options ###
+#----------------------------------------
+# Option
+#----------------------------------------
 # keep background processes at full spead
 # バックグランドで高速に
 setopt nobgnice
@@ -84,4 +98,3 @@ setopt hist_ignore_dups
 # 補完機能を有効化
 autoload -Uz compinit
 compinit
-#######
