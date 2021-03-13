@@ -20,21 +20,14 @@ repo = 'easymotion/vim-easymotion'
 
 # ステータスバーをいい感じにするやつ
 [[plugins]]
-repo = 'vim-airline/vim-airline'
-
-# ステータスバーのカスタマイズ用テーマ集
-[[plugins]]
-repo = 'vim-airline/vim-airline-themes'
+repo = 'itchyny/lightline.vim'
 
 # カラースキーマにmolokaiを適用
-[[plugins]]
-repo = 'tomasr/molokai'
+#[[plugins]]
+#repo = 'tomasr/molokai'
 
 # [[plugins]]
 # repo = 'Shougo/unite.vim'
-
-# #[[plugins]]
-# #repo = 'itchyny/lightline.vim'
 
 
 # [[plugins]]

@@ -1,6 +1,5 @@
 {
-    // VSCodeVim setting
-    "vim.useSystemClipboard": false,
+    "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "vim.visualstar": true,
     "vim.easymotion": true,
@@ -13,81 +12,93 @@
         {"before": ["<ESC>", "<ESC>"], "commands": [":noh"]},
         {"before": ["<C-[>", "<C-[>"], "commands": [":noh"]}
     ],
-
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {"before": ["j", "j"],"after" : ["<Esc>"]}, 
+    ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {"before": ["<Tab>"],"commands" : ["editor.action.indentLines"]}, 
         {"before": ["<S-Tab>"],"commands" : ["editor.action.outdentLines"]}, 
     ],
     "vim.useCtrlKeys": true,
     "vim.overrideCopy": true,
-    "vim.handleKeys": {
-        "<C-f>": true,
-        "<C-b>": true,
-        "<C-u>": true,
-        "<C-r>": true,
-        "<C-v>": true,
-        "<C-[>": true,
-        "<C-w>": true,
-    },
     "vim.cursorStylePerMode.normal" : "block",
     "vim.cursorStylePerMode.insert": "line-thin",
     "vim.cursorStylePerMode.replace": "block-outline",
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": ["#E9E900", "#000000"],
+    "vim.statusBarColors.normal": ["#A4FF96", "#000000"],
     "vim.statusBarColors.insert": ["#00D1FF", "#000000"],
-    "vim.statusBarColors.visual": ["#00F954", "#000000"],
-    "vim.statusBarColors.visualline": ["#00F954", "#000000"],
-    "vim.statusBarColors.visualblock": ["#00F954", "#000000"],
+    "vim.statusBarColors.visual": ["#F09996", "#000000"],
+    "vim.statusBarColors.visualline": ["#F09996", "#000000"],
+    "vim.statusBarColors.visualblock": ["#F09996", "#000000"],
     "vim.statusBarColors.replace": ["#E2A478", "#000000"],
     "vim.statusBarColors.commandlineinprogress": ["#E0E0E0", "#000000"],
     "vim.statusBarColors.searchinprogressmode": ["#E0E0E0", "#000000"],
     "vim.statusBarColors.easymotionmode": ["#E0E0E0", "#000000"],
     "vim.statusBarColors.easymotioninputmode": ["#E0E0E0", "#000000"],
     "vim.statusBarColors.surroundinputmode": ["#E0E0E0", "#000000"],
+    "vim.whichwrap": "h,l,<,>,[,]",
+
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
 
     "editor.snippetSuggestions": "top",
     "editor.tabCompletion": "on",
     "editor.minimap.renderCharacters": false,
-    "editor.insertSpaces": false,
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "boundary",
-    "explorer.compactFolders": false,
-    "workbench.colorTheme": "Monokai",
-    "files.autoGuessEncoding": true,
-   "todo-tree.tree.showScanModeButton": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.suggestSelection": "first",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.explorerKind": "external",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": false,
-    "git.confirmSync": false,
-
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#E9E900",
-        "statusBar.noFolderBackground": "#E9E900",
-        "statusBar.debuggingBackground": "#E9E900",
-        "statusBar.foreground": "#000000"
-    },
-    "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 15,
-    "markdown.preview.fontSize": 15,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    // Neo Vim
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "editor.cursorSurroundingLines": 9,
+
+    "explorer.compactFolders": false,
     "explorer.sortOrder": "modified",
     "explorer.confirmDelete": false,
+
+    "files.autoGuessEncoding": true,
+
+    "todo-tree.tree.showScanModeButton": false,
+
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.fontSize": 15,
+
     "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.list.automaticKeyboardNavigation": false,
+    "workbench.list.keyboardNavigation": "filter",
+    "workbench.iconTheme": "material-icon-theme",
+
+    "markdown.preview.fontSize": 15,
+
+    "git.confirmSync": false,
+
     "macros": {
         "viewExplorerAndToggleSidebar": [
             "workbench.view.explorer",
             "workbench.action.toggleSidebarVisibility"
         ]
     },
-    "workbench.list.automaticKeyboardNavigation": false,
-    "workbench.list.keyboardNavigation": "filter"
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    "liveServer.settings.port": 0,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "vim.debug.silent": true,
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+    "vim.autoSwitchInputMethod.defaultIM": "com.google.inputmethod.Japanese.Roman",
+    "vim.autoSwitchInputMethod.enable": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#A4FF96",
+        "statusBar.noFolderBackground": "#A4FF96",
+        "statusBar.debuggingBackground": "#A4FF96",
+        "statusBar.foreground": "#000000"
+    },
 }

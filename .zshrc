@@ -13,6 +13,10 @@ export PATH=$HOME/.nodebrew/node/v14.3.0/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 
 #----------------------------------------
+# Color
+#----------------------------------------
+export TERM=xterm-256color
+#----------------------------------------
 # nvim
 #----------------------------------------
 export XDG_BASE_HOME='~/.config'

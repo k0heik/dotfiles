@@ -44,3 +44,6 @@ if [[ ! -d ${HOME}/Library/Application\ Support/Code ]];then
 fi
 ln -snvf ${DOTPATH}/vscode/keybindings.json ${HOME}/Library/Application\ Support/Code/User/keybindings.json
 ln -snvf ${DOTPATH}/vscode/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
+
+# im-select
+curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh

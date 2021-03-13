@@ -27,6 +27,9 @@ syntax on
 set laststatus=2
 " ウィンドウの右下にまだ実行していない入力中のコマンドを表示
 set showcmd
+" カーソル行が背景色変更
+set cursorline
+
 
 "----------------------------------------
 " タブ/インデント
@@ -60,7 +63,7 @@ set whichwrap=b,s,h,l,<,>,[,],~
 " Backspaceキーの影響範囲に制限を設けない
 set backspace=indent,eol,start 
 " 上下8行の視界を確保
-set scrolloff=8
+set scrolloff=9
 " 左右スクロール時の視界を確保
 set sidescrolloff=16
 " 左右スクロールは一文字づつ行う
@@ -77,9 +80,10 @@ set mouse=a
 set shellslash
 " ファイル形式の検出
 filetype on
-" カラースキーマをmolokai
+" カラースキーマをmolokaiああああ
+autocmd ColorScheme molokai highlight Visual  ctermbg=238
+autocmd ColorScheme molokai highlight Comment ctermfg=102
 colorscheme molokai
-
 "----------------------------------------
 " ヒープの設定
 "----------------------------------------
@@ -97,6 +101,33 @@ let mapleader = "\<Space>"
 nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 " NerdTreeの表示
 map <C-t> :NERDTreeToggle<CR>
+" インサートモード時にEmacsライクを使用
+inoremap <C-d> <Del>
+inoremap <C-h> <BS>
+inoremap <C-a> <home>
+inoremap <C-e> <End>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+inoremap <C-f> <right>
+inoremap <C-b> <left>
+" tab s-tab でインデントする
+nnoremap <Tab> >>
+nnoremap <S-Tab> << 
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+" インサートから抜けるためのもの
+inoremap <silent> jj <ESC>
+
+" IMEをオフに
+" if has('mac')
+"   set ttimeoutlen=1
+"   let g:imeoff = 'osascript -e "tell application \"System Events\" to key code 102"'
+"   augroup MyIMEGroup
+"     autocmd!
+"     autocmd InsertLeave * :call system(g:imeoff)
+"   augroup END
+"   noremap <silent> <ESC> <ESC>:call system(g:imeoff)<CR>
+" endif
 
 "----------------------------------------
 " dein
@@ -117,16 +148,6 @@ if dein#load_state('~/cache/dein')
   call dein#end()
   call dein#save_state()
 endif
-
-" Let dein manage dein
-" Required:
-" call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
-
-" Add or remove your plugins here like this:
-"call dein#add('Shougo/neosnippet.vim')
-"call dein#add('Shougo/neosnippet-snippets')
-
-" Required:
 
 " Required:
 filetype plugin indent on
