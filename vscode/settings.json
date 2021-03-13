@@ -83,8 +83,8 @@
     "explorer.confirmDelete": false,
     "workbench.editor.enablePreview": false,
     "macros": {
-        "selectAndToggleSidebar": [
-            "list.select",
+        "viewExplorerAndToggleSidebar": [
+            "workbench.view.explorer",
             "workbench.action.toggleSidebarVisibility"
         ]
     },

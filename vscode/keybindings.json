@@ -60,8 +60,13 @@
 	},
 	{
 		"key": "ctrl+t",
+		"command": "macros.viewExplorerAndToggleSidebar",
+		"when": "viewContainer.workbench.view.explorer.enabled && listFocus"
+	},
+	{
+		"key": "ctrl+t",
 		"command": "workbench.view.explorer",
-		"when": "viewContainer.workbench.view.explorer.enabled"
+		"when": "viewContainer.workbench.view.explorer.enabled && !listFocus"
 	},
 	{
 		"key": "shift+cmd+e",
