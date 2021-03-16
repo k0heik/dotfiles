@@ -5,8 +5,15 @@
     "vim.easymotion": true,
     "vim.leader": "<space>",
     "vim.foldfix": true,
+    "vim.normalModeKeyBindings": [
+    ],
+    "vim.visualModeKeyBindings": [
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
-        {"before": ["f"], "after": ["<Leader>", "<Leader>", "s"]},
+        {"before": ["s"], "after": ["<Leader>", "<Leader>", "2", "s", "<char>", "<char>"]},
+        {"before": ["<Leader>"], "after": ["<Leader>", "<Leader>"]},
         {"before": ["<Tab>"],"commands" : ["editor.action.indentLines"]}, 
         {"before": ["<S-Tab>"],"commands" : ["editor.action.outdentLines"]},
         {"before": ["<ESC>", "<ESC>"], "commands": [":noh"]},
@@ -16,8 +23,12 @@
         {"before": ["j", "j"],"after" : ["<Esc>"]}, 
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
+        {"before": ["<Leader>"], "after": ["<Leader>", "<Leader>"]},
         {"before": ["<Tab>"],"commands" : ["editor.action.indentLines"]}, 
         {"before": ["<S-Tab>"],"commands" : ["editor.action.outdentLines"]}, 
+    ],
+    "vim.operatorPendingModeKeyBindingsNonRecursive": [
+        {"before": ["<Leader>"], "after": ["<Leader>", "<Leader>"]},
     ],
     "vim.useCtrlKeys": true,
     "vim.overrideCopy": true,

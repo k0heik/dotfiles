@@ -22,9 +22,9 @@ repo = 'easymotion/vim-easymotion'
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 
-# カラースキーマにmolokaiを適用
-#[[plugins]]
-#repo = 'tomasr/molokai'
+# インデント編集
+[[plugins]]
+repo = 'michaeljsmith/vim-indent-object'
 
 # [[plugins]]
 # repo = 'Shougo/unite.vim'

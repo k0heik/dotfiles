@@ -117,17 +117,25 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 " インサートから抜けるためのもの
 inoremap <silent> jj <ESC>
+"easymotion
+map f <Plug>(easymotion-fl)
+map t <Plug>(easymotion-tl)
+map F <Plug>(easymotion-Fl)
+map T <Plug>(easymotion-Tl)
+map <Leader> <Plug>(easymotion-prefix)
+nmap s <Plug>(easymotion-s2)
+xmap s <Plug>(easymotion-s2)
 
 " IMEをオフに
-" if has('mac')
-"   set ttimeoutlen=1
-"   let g:imeoff = 'osascript -e "tell application \"System Events\" to key code 102"'
-"   augroup MyIMEGroup
-"     autocmd!
-"     autocmd InsertLeave * :call system(g:imeoff)
-"   augroup END
-"   noremap <silent> <ESC> <ESC>:call system(g:imeoff)<CR>
-" endif
+if has('mac')
+  set ttimeoutlen=1
+  let g:imeoff = 'osascript -e "tell application \"System Events\" to key code 102"'
+  augroup MyIMEGroup
+    autocmd!
+    autocmd InsertLeave * :call system(g:imeoff)
+  augroup END
+  noremap <silent> <ESC> <ESC>:call system(g:imeoff)<CR>
+endif
 
 "----------------------------------------
 " dein
