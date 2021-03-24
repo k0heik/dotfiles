@@ -231,4 +231,50 @@
 		"key": "cmd+b",
 		"command": "-workbench.action.toggleSidebarVisibility"
 	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "pagedown",
+		"command": "cursorPageDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "pagedown",
+		"command": "-cursorPageDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "pageup",
+		"command": "cursorPageUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "pageup",
+		"command": "-cursorPageUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "p",
+		"command": "list.focusParent",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "x",
+		"command": "macros.listParentandCollapse",
+		"when": "listFocus && !inputFocus"
+	},
 ]

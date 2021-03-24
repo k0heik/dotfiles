@@ -94,6 +94,10 @@
         "viewExplorerAndToggleSidebar": [
             "workbench.view.explorer",
             "workbench.action.toggleSidebarVisibility"
+        ],
+        "listParentandCollapse": [
+            "list.focusParent",
+            "list.collapse"
         ]
     },
 
@@ -112,4 +116,5 @@
         "statusBar.debuggingBackground": "#A4FF96",
         "statusBar.foreground": "#000000"
     },
+    "editor.renderControlCharacters": true,
 }
