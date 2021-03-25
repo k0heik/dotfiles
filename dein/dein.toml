@@ -22,6 +22,11 @@ repo = 'easymotion/vim-easymotion'
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 
+# nvim用のいい感じにステータスバーするやつ
+[[plugins]]
+repo = 'maximbaz/lightline-ale'
+depends = ['lightline.vim', 'ale']
+
 # インデント編集
 [[plugins]]
 repo = 'michaeljsmith/vim-indent-object'
@@ -42,6 +47,3 @@ repo = 'michaeljsmith/vim-indent-object'
 # [[plugins]]
 # repo = 'dense-analysis/ale'
 
-# [[plugins]]
-# repo = 'maximbaz/lightline-ale'
-# depends = ['lightline.vim', 'ale']

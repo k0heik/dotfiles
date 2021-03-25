@@ -68,7 +68,8 @@
     "editor.renderWhitespace": "boundary",
     "editor.minimap.enabled": false,
     "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 18,
     "editor.suggestSelection": "first",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -117,4 +118,6 @@
     "editor.renderControlCharacters": true,
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Monokai",
+    "editor.detectIndentation": false,
+
 }
