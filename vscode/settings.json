@@ -118,6 +118,4 @@
     "editor.renderControlCharacters": true,
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Monokai",
-    "editor.detectIndentation": false,
-
 }
